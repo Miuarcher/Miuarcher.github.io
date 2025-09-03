@@ -1,0 +1,45 @@
+/* 为 Markdown 中的缩进内容添加层级样式 */
+/* 适用于普通文本缩进（如列表、代码块外的文本缩进） */
+.markdown-body p,
+.markdown-body ul,
+.markdown-body ol {
+  /* 基础行高，增强可读性 */
+  line-height: 1.8;
+}
+
+/* 一级缩进（通常是 4 个空格或 1 个 Tab） */
+.markdown-body p-indent-1,
+.markdown-body ul-indent-1,
+.markdown-body ol-indent-1 {
+  padding-left: 2rem; /* 左侧缩进距离 */
+  color: #555; /* 可选：用颜色区分层级 */
+}
+
+/* 二级缩进 */
+.markdown-body p-indent-2,
+.markdown-body ul-indent-2,
+.markdown-body ol-indent-2 {
+  padding-left: 4rem;
+  color: #777;
+}
+
+/* 对列表项的特殊处理（如果你的层级是用列表实现的） */
+.markdown-body ul li {
+  margin: 0.5rem 0;
+}
+.markdown-body ul li ul li {
+  /* 二级列表项 */
+  padding-left: 0.5rem;
+  list-style-type: circle; /* 用不同符号区分层级 */
+}
+.markdown-body ul li ul li ul li {
+  /* 三级列表项 */
+  list-style-type: square;
+}
+
+/* 代码块内的缩进（如果需要增强代码块内的层级显示） */
+.markdown-body pre code {
+  font-family: Consolas, Monaco, monospace;
+  line-height: 1.6;
+}
+    

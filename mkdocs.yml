@@ -7,7 +7,12 @@ site_author: Miuarcher
 nav:
   - 我:
     - ME/index.md
-    - ME/introduction.md
+    - ME/education.md
+    - ME/contact.md
+  - 我的世界:
+    - MC/index.md
+    - MC/survive.md
+    - MC/mod.md
   - 网站:
     # 访客打开网站第一个看到的是 docs/index.md
     # 构建网站时，不用管报错 "The following pages exist in the docs directory, but are not included in the "nav" configuration: index.md"
@@ -15,7 +20,7 @@ nav:
     - WEBSITE/index.md
     - WEBSITE/build.md
     - WEBSITE/help.md
-    - WEBSITE/test.md
+
 # [UI]
 # [top]
 theme:
@@ -91,6 +96,9 @@ repo_name: Miuarcher.github.io
 # [bottom-left corner]：版权说明优化（补充年份和作者）
 copyright: "© 2025 Miuarcher | Mirror CC-BY-4.0"
 
+extra_css:
+  - css/custom.css
+
 # [bottom-right corner]：补充功能配置
 extra:
   # 社交网络：保留GitHub，补充邮箱/文档说明（提升联系便捷性）
@@ -98,6 +106,9 @@ extra:
     - name: GitHub | Miuarcher
       icon: fontawesome/brands/github
       link: https://github.com/Miuarcher
+    - name: Bilibili | 难明是镜
+      icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/522146509
     - name: 文档说明 | 指南
       icon: fontawesome/solid/book
       link: /docs/guide/  # 替换为你的文档指南路径
