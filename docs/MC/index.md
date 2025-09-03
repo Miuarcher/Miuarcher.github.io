@@ -4,3 +4,19 @@
 - 笔者的原版生存是围绕着红石生存电路进行的，对于一部分玩家来说进档探索、修建地狱门、来到下界收集材料、开启末地传送门、击败末影龙，这个存档就结束了它的使命。然而，包括笔者在内的另一部分玩家认为这样一个自由的游戏只是固定流程的话就浪费了诸多的玩法（当然也有一部分原因是笔者和怪物对战的能力实在太过薄弱，所以不得不另寻发展路径），所以在诸多前人智慧的基础上，一种用mc中的红石原件来实现信号传导从而做到物品量产，大大增加个人生产力和战斗力的玩法——生电，应运而生。
 ## [机械动力生存篇](./mod.md)
 - 从原版的生存发展就可以看出，笔者是一个推崇自动化玩法的玩家，那么对模组的体验也主要以科技模组为主，所以在这里就从机械动力（Create）模组出发，来讲述一下笔者对模组生存的理解，同时也从机械动力稍微说开去一些，讲讲自动化游戏的意义。
+
+<script src="https://giscus.app/client.js"
+        data-repo="Miuarcher/Miuarcher.github.io"
+        data-repo-id="R_kgDOPo7_XA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOPo7_XM4Cu7Pw"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
