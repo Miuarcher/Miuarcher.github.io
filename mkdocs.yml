@@ -111,24 +111,6 @@ extra:
     sidebar:
       fallback: none  # 移动端无足够空间时，不强制显示侧边栏（通过按钮触发）
 
-# [Extensions]：插件与扩展优化
-plugins:
-  # 搜索功能：保留多语言，补充搜索范围优化
-  - search:
-      lang:
-        - zh
-        - en
-        - ja
-      prebuild_index: true  # 预构建搜索索引（提升首次加载速度）
-      exclude:  # 排除无需搜索的目录（减少索引体积）
-        - docs/archive/**
-        - docs/vendor/**
-
-  # 实用插件（已移除不兼容的mkdocstrings）
-  - git-revision-date-localized:  # 显示文档最后更新时间（提升可信度）
-      type: date  # 仅显示日期（如“2024-05-20”）
-      locale: zh  # 中文显示（如“2024年5月20日”）
-
 markdown_extensions:
   # 原有扩展保留
   - pymdownx.arithmatex:
