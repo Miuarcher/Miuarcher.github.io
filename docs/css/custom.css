@@ -1,3 +1,35 @@
+/* 基础样式设置 */
+.markdown-body {
+  /* 引入背景图片，设置固定不滚动并居中 */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+/* 内容容器 - 有文字的区域 */
+.markdown-content {
+  /* 日间模式背景为白色 */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.markdown-body.dark-mode .markdown-content {
+  /* 夜间模式背景为深色 */
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
 /* 为 Markdown 中的缩进内容添加层级样式 */
 /* 适用于普通文本缩进（如列表、代码块外的文本缩进） */
 .markdown-body p,
@@ -23,7 +55,7 @@
   color: #777;
 }
 
-/* 对列表项的特殊处理（如果你的层级是用列表实现的） */
+/* 对列表项的特殊处理 */
 .markdown-body ul li {
   margin: 0.5rem 0;
 }
@@ -37,9 +69,30 @@
   list-style-type: square;
 }
 
-/* 代码块内的缩进（如果需要增强代码块内的层级显示） */
+/* 代码块样式 */
 .markdown-body pre code {
   font-family: Consolas, Monaco, monospace;
   line-height: 1.6;
+  display: block;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
 }
-    
+
+/* 夜间模式下的文本和代码块调整 */
+.markdown-body.dark-mode p-indent-1,
+.markdown-body.dark-mode ul-indent-1,
+.markdown-body.dark-mode ol-indent-1 {
+  color: #bbb;
+}
+
+.markdown-body.dark-mode p-indent-2,
+.markdown-body.dark-mode ul-indent-2,
+.markdown-body.dark-mode ol-indent-2 {
+  color: #999;
+}
+
+.markdown-body.dark-mode pre code {
+  background-color: #2d2d2d;
+  color: #ccc;
+}

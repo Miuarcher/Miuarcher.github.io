@@ -26,6 +26,9 @@ nav:
 theme:
   name: material
   # 基础配置：保留原有日间/夜间模式，补充字体优化
+  extra:
+    partials:
+      - comment  # 对应我们创建的 overrides/partials/comments.html
   font:
     text: Noto Sans SC  # 中文主字体（适配中文显示）
     code: Fira Code     # 代码字体（等宽，适合技术文档）
@@ -86,6 +89,8 @@ theme:
 
   language: zh  # 保留中文提示
 
+
+
 # 编辑功能：保留原有GitHub编辑
 edit_uri: edit/main/docs/
 
@@ -95,9 +100,6 @@ repo_name: Miuarcher.github.io
 
 # [bottom-left corner]：版权说明优化（补充年份和作者）
 copyright: "© 2025 Miuarcher | Mirror CC-BY-4.0"
-
-extra_css:
-  - css/custom.css
 
 # [bottom-right corner]：补充功能配置
 extra:
@@ -172,3 +174,4 @@ extra_css:
   - mkdocs/css/custom-highlight.css
   # 新增：响应式图片（确保移动端图片不溢出）
   - mkdocs/css/responsive-images.css
+  - css/custom.css  # 新增：引用你的背景图样式文件（关键！）
